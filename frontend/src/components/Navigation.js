@@ -2,7 +2,7 @@
  * @author Mahmud Ahsan <https://github.com/mahmudahsan>
  */
 
- import React from 'react';
+import React from 'react';
 import Config from '../config/Settings';
 
 export default (props) => {

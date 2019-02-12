@@ -2,7 +2,7 @@
  * @author Mahmud Ahsan <https://github.com/mahmudahsan>
  */
 
- import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './stylesheets/index.css';
