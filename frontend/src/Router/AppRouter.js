@@ -20,9 +20,9 @@ const AppRouter = () => {
               <nav className="nav">
                 {Object.keys(Config.menu).map((key)=> {
                   return (
-                    <NavLink className="p-2 text-muted" to={Config.menu[key][1]}
-                      activeStyle={{fontWeight: 'bold'}}
-                    >{Config.menu[key][0]}</NavLink>
+                    <span key={Config.menu[key][1]}><NavLink className="p-2 text-muted" to={Config.menu[key][1]}
+                    activeStyle={{fontWeight: 'bold'}}
+                  >{Config.menu[key][0]}</NavLink></span>
                   );
                 })}
               </nav>
@@ -32,7 +32,7 @@ const AppRouter = () => {
                 {Object.keys(Config.social).map((key)=>{
                   const iconUrl = "/images/social/icon-" + key + ".png";
                   return (
-                    <a className="p-2 text-muted" href={Config.social[key]} target="_blank" rel="noopener noreferrer">
+                    <a className="p-2 text-muted" href={Config.social[key]} key={Config.social[key]} target="_blank" rel="noopener noreferrer">
                     <img src={iconUrl}  alt="{}" height="30" />
                     </a>
                   );

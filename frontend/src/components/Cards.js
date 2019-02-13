@@ -11,7 +11,7 @@ export default (props) => {
       {Cards.map((card)=>{
         const cardImage = Config.imageBaseUrl + "images/cards/" + card.image;
         return (
-          <div className="col-md-6">
+          <div className="col-md-6" key={card.title_english+card.title_other}>
             <div className="card flex-md-row mb-4 box-shadow h-md-250">
               <div className="card-body d-flex flex-column align-items-start">
                 <strong className="d-inline-block mb-2 color-gray">{ card.title_english }</strong>
