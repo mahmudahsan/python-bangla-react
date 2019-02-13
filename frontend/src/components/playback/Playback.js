@@ -28,8 +28,8 @@ export default class Playback extends React.Component {
     }
   }
 
-  setActiveVideoId = (videoId) => {
-    console.log(videoId);
+  setActiveVideo = (video) => {
+    this.setState({activeVideo: video});
   }
 
   componentDidUpdate(prevProps){
@@ -47,7 +47,7 @@ export default class Playback extends React.Component {
         <div className="card">
           <div className="card-body">
             <div className="row">
-              <Playlist playlist={this.playlist} />
+              <Playlist playlist={this.playlist} setActiveVideo={this.setActiveVideo} />
               <Youtube activevideo={this.state.activeVideo} />
             </div>
           </div>
