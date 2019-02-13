@@ -21,7 +21,7 @@ export default class Playback extends React.Component {
 
   getPlayList = () => {
     switch(this.props.topic){
-      case Config.menu.python_advanced[1]:
+      case Config.menu.menu2[1]: //advanced
         return PlayList.advanced;
       default:
         return PlayList.beginner;

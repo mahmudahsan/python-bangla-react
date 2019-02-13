@@ -20,9 +20,12 @@ const AppRouter = () => {
               <nav className="nav">
                 {Object.keys(Config.menu).map((key)=> {
                   return (
-                    <span key={Config.menu[key][1]}><NavLink className="p-2 text-muted" to={Config.menu[key][1]}
-                    activeStyle={{fontWeight: 'bold'}}
-                  >{Config.menu[key][0]}</NavLink></span>
+                    <span key={Config.menu[key][1]}>
+                      { Config.menu[key][1] === 'ext' ? <a className="p-2 text-muted" href={Config.menu[key][2]} target="_blank" rel="noopener noreferrer">{Config.menu[key][0]}</a> : <NavLink className="p-2 text-muted" to={Config.menu[key][1]}
+                      activeClassName="nav-active"
+                      exact
+                    >{Config.menu[key][0]}</NavLink>}
+                    </span>
                   );
                 })}
               </nav>
@@ -42,8 +45,13 @@ const AppRouter = () => {
           </div>
 
           <Switch>
-            <Route path="/" component={RoutingComponent} exact={true} />
-            <Route path="/advanced" component={RoutingComponent} />
+            <Route path={Config.menu.menu1[1]} component={RoutingComponent} exact />
+            <Route path={Config.menu.menu2[1]} component={RoutingComponent} />
+            <Route path={Config.menu.menu3[1]} component={RoutingComponent} />
+            <Route path={Config.menu.menu4[1]} component={RoutingComponent} />
+            <Route path={Config.menu.menu5[1]} component={RoutingComponent} />
+            <Route path={Config.menu.menu6[1]} component={() => window.location='"'+Config.menu.menu6[2]+'"'} />
+            <Route path={Config.menu.menu7[1]} component={RoutingComponent} />
             <Route component={NotFoundPage} />
           </Switch>
         </div>

@@ -10,6 +10,7 @@ const RoutingComponent = (props) => {
   return (
     <div>
       <Cards />
+      <div className="mb-2"></div>
       <Playback topic={props.match.path} />
     </div>
   );
