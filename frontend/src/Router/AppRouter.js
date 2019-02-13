@@ -15,34 +15,30 @@ const AppRouter = () => {
       <Header />
       <BrowserRouter>
         <div>
-          <div className="nav-scroller py-1 mb-2">
-            <div className="float-left">
-              <nav className="nav">
-                {Object.keys(Config.menu).map((key)=> {
-                  return (
-                    <span key={Config.menu[key][1]}>
-                      { Config.menu[key][1] === 'ext' ? <a className="p-2 text-muted" href={Config.menu[key][2]} target="_blank" rel="noopener noreferrer">{Config.menu[key][0]}</a> : <NavLink className="p-2 text-muted" to={Config.menu[key][1]}
-                      activeClassName="nav-active"
-                      exact
-                    >{Config.menu[key][0]}</NavLink>}
-                    </span>
-                  );
-                })}
-              </nav>
-            </div>
-            <div>
-              <nav className="nav justify-content-end">
-                {Object.keys(Config.social).map((key)=>{
-                  const iconUrl = "/images/social/icon-" + key + ".png";
-                  return (
-                    <a className="p-2 text-muted" href={Config.social[key]} key={Config.social[key]} target="_blank" rel="noopener noreferrer">
-                    <img src={iconUrl}  alt="{}" height="30" />
-                    </a>
-                  );
-                })}
-              </nav>
-            </div>
+        <nav className="navbar navbar-light justify-content-between">
+          <div className="nav">
+            {Object.keys(Config.menu).map((key)=> {
+              return (
+                <span key={Config.menu[key][1]}>
+                  { Config.menu[key][1] === 'ext' ? <a className="p-2 text-muted" href={Config.menu[key][2]} target="_blank" rel="noopener noreferrer">{Config.menu[key][0]}</a> : <NavLink className="p-2 text-muted" to={Config.menu[key][1]}
+                  activeClassName="nav-active"
+                  exact
+                >{Config.menu[key][0]}</NavLink>}
+                </span>
+              );
+            })}
           </div>
+          <div className="nav">
+          {Object.keys(Config.social).map((key)=>{
+            const iconUrl = "/images/social/icon-" + key + ".png";
+            return (
+              <a className="p-2 text-muted" href={Config.social[key]} key={Config.social[key]} target="_blank" rel="noopener noreferrer">
+              <img src={iconUrl}  alt="{}" height="30" />
+              </a>
+            );
+          })}
+          </div>
+        </nav>
 
           <Switch>
             <Route path={Config.menu.menu1[1]} component={RoutingComponent} exact />
