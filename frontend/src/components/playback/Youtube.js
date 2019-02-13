@@ -8,7 +8,7 @@ import React from 'react';
 export default class Youtube extends React.Component {
 
   render(){
-    const firstVideoId = this.props.firstvideo !== undefined ? this.props.firstvideo.youtube : undefined;
+    const firstVideoId = this.props.activevideo !== undefined ? this.props.activevideo.youtube : undefined;
     
     return (
       <div id="youtube-container" className="col-8">
