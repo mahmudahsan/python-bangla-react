@@ -30,6 +30,24 @@ export default class Playback extends React.Component {
             resolve(data);
           });
           break;
+        case Config.menu.menu3[1]: 
+          //django
+          getPlayList(Config.menu.menu3[2]).then(data => {
+            resolve(data);
+          });
+          break;
+        case Config.menu.menu4[1]: 
+          //html
+          getPlayList(Config.menu.menu4[2]).then(data => {
+            resolve(data);
+          });
+          break;
+        case Config.menu.menu5[1]: 
+          //english
+          getPlayList(Config.menu.menu5[2]).then(data => {
+            resolve(data);
+          });
+          break;
         default:
           // beginner
           getPlayList(Config.menu.menu1[2]).then(data => {
