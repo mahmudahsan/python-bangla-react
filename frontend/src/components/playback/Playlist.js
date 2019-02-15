@@ -17,6 +17,12 @@ export default class Playlist extends React.Component {
     this.setState({selectedItemIndex: index});
   }
 
+  componentDidUpdate(prevProps){
+    if (this.props.playlist !== prevProps.playlist) {
+      this.setState({selectedItemIndex: 0});
+    }
+  }
+
   render(){
     return (
       <div className="col-4">

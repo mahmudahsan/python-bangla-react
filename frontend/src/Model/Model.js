@@ -15,13 +15,14 @@ const getPlaylist = (collectionName) => {
       .then(querySnapshot => {
         querySnapshot.forEach(doc => {
           const obj = {
-            id: doc.id, 
+            id: doc.data()['id'], 
             title: doc.data()['title'],
             description: doc.data()['description'],
             youtube: doc.data()['youtube']
           }
           playList.push(obj);
         });
+        playList.sort((a, b) => ( a.id - b.id ));
         resolve (playList);
       });
   });

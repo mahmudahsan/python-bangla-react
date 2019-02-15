@@ -24,7 +24,6 @@ export default (props) => {
     // add data in firebase
     addItemInPlaylist(collection, id, title, description, youtube);
 
-    document.getElementById('id').value = "";
     document.getElementById('title').value = "";
     document.getElementById('youtube').value = "";
     document.getElementById('description').value = "";
