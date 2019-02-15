@@ -5,28 +5,39 @@
 import React from 'react';
 import Playlist from './Playlist';
 import Youtube from './Youtube';
-import Config, {PlayList} from '../../config/Settings';
+import Config from '../../config/Settings';
+import getPlayList from '../../Model/Model';
 
 export default class Playback extends React.Component {
   constructor(props){
     super(props);
+    this.state = { activeVideo: undefined }
     
-    this.playlist = this.getPlayList();
-    this.firstvideo = this.playlist.length > 0 ? this.playlist[0] : undefined;
+    this.getPlayList().then(data => {
+      this.playlist = data;
+      this.firstvideo = this.playlist.length > 0 ? this.playlist[0] : undefined;
 
-    this.state = {
-      activeVideo: this.firstvideo
-    }
+      this.setState({activeVideo: this.firstvideo});
+    });
   }
 
   getPlayList = () => {
-    switch(this.props.topic){
-      case Config.menu.menu2[1]: //advanced
-        return PlayList.advanced;
-      default:
-        return PlayList.beginner;
-    }
-  }
+    return new Promise((resolve, reject) => {
+      switch(this.props.topic){
+        case Config.menu.menu2[1]: 
+          //advanced
+          getPlayList(Config.menu.menu2[2]).then(data => {
+            resolve(data);
+          });
+          break;
+        default:
+          // beginner
+          getPlayList(Config.menu.menu1[2]).then(data => {
+            resolve(data);
+          });
+      }
+    });
+  };
 
   setActiveVideo = (video) => {
     this.setState({activeVideo: video});
@@ -34,10 +45,12 @@ export default class Playback extends React.Component {
 
   componentDidUpdate(prevProps){
     if (this.props.topic !== prevProps.topic) {
-      this.playlist = this.getPlayList();
-      this.firstvideo = this.playlist.length > 0 ? this.playlist[0] : undefined;
-
-      this.setState({activeVideo: this.firstvideo});
+      this.getPlayList().then(data => {
+        this.playlist = data;
+        this.firstvideo = this.playlist.length > 0 ? this.playlist[0] : undefined;
+  
+        this.setState({activeVideo: this.firstvideo});
+      });
     }
   }
 
@@ -47,8 +60,9 @@ export default class Playback extends React.Component {
         <div className="card">
           <div className="card-body">
             <div className="row">
-              <Playlist playlist={this.playlist} setActiveVideo={this.setActiveVideo} />
-              <Youtube activevideo={this.state.activeVideo} />
+            {this.playlist !== undefined && <Playlist playlist={this.playlist} setActiveVideo={this.setActiveVideo} /> }
+            
+            {this.state.activeVideo !== undefined && <Youtube activevideo={this.state.activeVideo} /> }
             </div>
           </div>
         </div>

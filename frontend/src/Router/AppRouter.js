@@ -8,6 +8,7 @@ import Header from '../components/Header';
 import RoutingComponent from '../components/RoutingComponent';
 import NotFoundPage from '../components/NotFoundPage';
 import Config from '../config/Settings';
+import FirebaseForm from '../components/FirebaseForm';
 
 const AppRouter = () => {
   return (
@@ -19,7 +20,7 @@ const AppRouter = () => {
           <div className="nav">
             {Object.keys(Config.menu).map((key)=> {
               return (
-                <span key={Config.menu[key][1]}>
+                <span key={Config.menu[key][0]}>
                   { Config.menu[key][1] === 'ext' ? <a className="p-2 text-muted" href={Config.menu[key][2]} target="_blank" rel="noopener noreferrer">{Config.menu[key][0]}</a> : <NavLink className="p-2 text-muted" to={Config.menu[key][1]}
                   activeClassName="nav-active"
                   exact
@@ -48,6 +49,8 @@ const AppRouter = () => {
             <Route path={Config.menu.menu5[1]} component={RoutingComponent} />
             <Route path={Config.menu.menu6[1]} component={() => window.location='"'+Config.menu.menu6[2]+'"'} />
             <Route path={Config.menu.menu7[1]} component={RoutingComponent} />
+            <Route path="/admin" component={FirebaseForm} />
+            
             <Route component={NotFoundPage} />
           </Switch>
         </div>

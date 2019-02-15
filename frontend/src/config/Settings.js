@@ -7,11 +7,12 @@ const Config = {
   logoAlt: 'পাইথন বাংলা',
   imageBaseUrl: "/",
   menu: {
-    menu1: ["বিগিনার", "/"],
-    menu2: ["অ‍্যাডভান্সড", "/advanced"],
-    menu3: ["জ‍্যাঙ্গো ওয়েব", "/django"],
-    menu4: ["HTML|CSS", "/html-css"],
-    menu5: ["Python English", "/python-tutorials"],
+    // [menu, path, firebase-collection-name]
+    menu1: ["বিগিনার", "/", 'beginner'],
+    menu2: ["অ‍্যাডভান্সড", "/advanced", 'advanced'],
+    menu3: ["জ‍্যাঙ্গো ওয়েব", "/django", 'django'],
+    menu4: ["HTML|CSS", "/html-css", 'html'],
+    menu5: ["Python English", "/python-tutorials", 'english'],
     menu6: ["ব্লগ", "ext", "http://thinkdiff.net"],
     menu7: ["মোবাইল অ‍্যাপস", "ext", "http://ithinkdiff.net"],
   },
@@ -65,37 +66,3 @@ const Cards = [
 ];
 
 export {Cards};
-
-const PlayList = {
-  beginner: [
-    {
-      title: '১. পাইথন কি, কিভাবে পাইথন সেটআপ করতে হয়, কিভাবে কোড লিখে রান করতে হয়',
-      description: 'পাইথন ৩ প্রোগ্রামিং কোর্সে আপনাকে স্বাগতম। আমি ধারাবাহিক ভাবে কিছু ভিডিও টিউটোরিয়াল আপনাদের সাথে শেয়ার করব এবং পাইথন ৩ নিয়ে কাজ করব।এই পর্বে আমরা দেখাব, পাইথন কি, কিভাবে পাইথন সেটআপ করতে হয়, কিভাবে কোড লিখে রান করতে হয়। ',
-      youtube: 'qcRlYt28WPM'
-    },
-    {
-      title: '২. পাইথনে কমেন্ট, ভেরিয়েবল এবং অপারেটর',
-      description: '',
-      youtube: 'wYN5ohMh_O4'
-    },
-    {
-      title: '৩. পাইথনে স্টেটমেন্ট, এক্সপ্রেশন এবং স্ট্রিং',
-      description: "পাইথন ৩ প্রোগ্রামিং কোর্সের এই পর্বে আমরা দেখব",
-      youtube: 'aZSap9MNWlM'
-    },
-  ],
-  advanced: [
-    {
-      title: '১. পাইথনে ফাইলস, টেক্সট, বাইনারি, সিএসভি এবং জেসন ডাটা কি এবং কিভাবে',
-      description: '',
-      youtube: 'k1rFag1W2WM',
-    },
-    {
-      title: '৩. পাইথনে রেগুলার এক্সপ্রেশন অথবা রেজেক্স যেভাবে ব‍্যবহার করা হয়',
-      description: 'Regular Expression',
-      youtube: 'yygyryPAJH0',
-    },
-  ]
-};
-
-export {PlayList};

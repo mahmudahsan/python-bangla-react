@@ -3,6 +3,7 @@
  */
 
 import React from 'react';
+import Linkify from 'react-linkify'
 //import Config from '../config/Settings';
 
 const Youtube = props => {
@@ -17,7 +18,7 @@ const Youtube = props => {
           </div>
           <div className="mb-3"></div>
           <div id="youtube-description" className="youtube-description">
-            <pre style={{whiteSpace: 'pre-wrap'}}>{activeVideo.description}</pre>
+            <pre style={{whiteSpace: 'pre-wrap'}}><Linkify>{activeVideo.description}</Linkify></pre>
           </div>
         </div>
       </div>
