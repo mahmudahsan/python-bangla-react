@@ -15,7 +15,7 @@ const getPlaylist = (collectionName) => {
       .then(querySnapshot => {
         querySnapshot.forEach(doc => {
           const obj = {
-            id: doc.data()['id'], 
+            id: doc.id, 
             title: doc.data()['title'],
             description: doc.data()['description'],
             youtube: doc.data()['youtube']
@@ -36,14 +36,14 @@ const addItemInPlaylist = (collectionName, id, title, description, youtube) => {
     const db = Firebase.firestore();
     const collectionRef = db.collection(collectionName);
 
-    collectionRef.add({
-      id: parseInt(id),
+    // document id externally provided
+    collectionRef.doc(id).set({
       title: title, 
       description: description,
       youtube: youtube
     })
-    .then((docRef) => {
-      console.log("Success. " + docRef.id);
+    .then(() => {
+      console.log("Success.");
     })
     .catch((error) => {
       console.log("Error. " + error);
