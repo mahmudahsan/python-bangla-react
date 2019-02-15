@@ -18,7 +18,8 @@
 
 
 # Python Bangla React
-I remake the frontend of my original Django Python Bangla project to React based project.
+I remake my original Python Django Framework based project [PythonBangla](https://github.com/mahmudahsan/pythonbangla.com) to Reactjs and firebase based project. During the making of this project, I updated the UI a bit. 
+
 
 <p align="center">
     <img src="Resources/Mockup.png" alt="Mockup" />
