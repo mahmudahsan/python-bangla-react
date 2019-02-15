@@ -23,4 +23,11 @@ yarn-debug.log*
 yarn-error.log*
 
 # firebase
-.firebase
+**/secrets.json
+**/firebase-debug.log
+**/node_modules
+**/bower_components
+**/*.bak
+.idea
+.firebaserc
+.firebase.*
