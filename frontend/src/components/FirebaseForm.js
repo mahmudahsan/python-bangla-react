@@ -46,16 +46,17 @@ export default (props) => {
           <label htmlFor="title">Title</label>
           <input type="text" className="form-control" id="title" placeholder="Title" />
         </div>
-      
-        <div className="form-group">
-          <label htmlFor="youtube">Youtube ID</label>
-          <input type="text" className="form-control" id="youtube" placeholder="xkdkdi393" />
-        </div>
         
         <div className="form-group">
           <label htmlFor="description">Description</label>
           <textarea className="form-control" id="description" rows="5"></textarea>
         </div>
+
+        <div className="form-group">
+          <label htmlFor="youtube">Youtube ID</label>
+          <input type="text" className="form-control" id="youtube" placeholder="xkdkdi393" />
+        </div>
+
         <button type="submit" className="btn btn-primary mb-2" onClick={onFormSubmit}>ADD</button>
      </form>
     </div>
