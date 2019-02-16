@@ -23,8 +23,8 @@ export default (props) => {
           </div>
           <div className="col-sm-4">
               <p>
-                  <a href="#">Back to top</a> <br />
-                  <a href="https://github.com/mahmudahsan/python-bangla-react" target="_blank" rel="noreferrer noopener"><span role="img" aria-label="github">🧐</span>Github Source Code</a>
+                  <a href="https://github.com/mahmudahsan/python-bangla-react" target="_blank" rel="noreferrer noopener"><span role="img" aria-label="github">🧐</span>Github Source</a> <br />
+                  <a href="https://github.com/mahmudahsan/pythonbangla.com" target="_blank" rel="noreferrer noopener"><span role="img" aria-label="github">🤔</span>Original Django Source </a>
               </p>
           </div>
       </div>

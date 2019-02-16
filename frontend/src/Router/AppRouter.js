@@ -9,7 +9,6 @@ import RoutingComponent from '../components/RoutingComponent';
 import Footer from '../components/Footer';
 import NotFoundPage from '../components/NotFoundPage';
 import Config from '../config/Settings';
-import FirebaseForm from '../components/FirebaseForm';
 
 const AppRouter = () => {
   return (
@@ -51,14 +50,13 @@ const AppRouter = () => {
             <Route path={Config.menu.menu5[1]} component={RoutingComponent} />
             <Route path={Config.menu.menu6[1]} component={() => window.location='"'+Config.menu.menu6[2]+'"'} />
             <Route path={Config.menu.menu7[1]} component={RoutingComponent} />
-            <Route path="/admin" component={FirebaseForm} />
             
             <Route component={NotFoundPage} />
           </Switch>
         </div>
       </BrowserRouter>
     </div>
-    <div class="mb-4"></div>
+    <div className="mb-4"></div>
     <Footer />
     </div>
   );
