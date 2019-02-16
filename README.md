@@ -22,9 +22,9 @@ I remake my original Python Django Framework based project [PythonBangla](https:
 
 Demo 1: 😎 [http://pythonbangla.com/](http://pythonbangla.com/) | Source Code: [Github React](https://github.com/mahmudahsan/python-bangla-react)
 
-Demo 1 🤓: [Django + PostgreSQL + Heroku](https://pb-947583-bn474.herokuapp.com) | Source Code: [Github Django](https://github.com/mahmudahsan/pythonbangla.com)
+Demo 2: 🤓 [Django + PostgreSQL + Heroku](https://pb-947583-bn474.herokuapp.com) | Source Code: [Github Django](https://github.com/mahmudahsan/pythonbangla.com)
 
 
 <p align="center">
-    <img src="Resources/Mockup.png" alt="Mockup" />
+    <img src="Resources/Mockup.png" alt="Mockup" height="500" />
 </p>
