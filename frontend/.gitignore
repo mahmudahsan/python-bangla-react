@@ -30,4 +30,3 @@ yarn-error.log*
 **/*.bak
 .idea
 .firebaserc
-.firebase.*

@@ -18,10 +18,13 @@ const Config = {
   },
   social: {
     facebook: "https://www.facebook.com/thinkdiff.net/",
-    twitter:  "http://twitter.com/mahmudahsan",
-    github:   "https://github.com/mahmudahsan/pythonbangla.com",
+    twitter:  "http://twitter.com/mahmudahsan/",
+    github:   "https://github.com/mahmudahsan/",
     linkedin: "https://www.linkedin.com/in/mahmudahsan/",
-    youtube:  "https://www.youtube.com/c/banglaprogramming",
+    youtube:  "https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg",
+  },
+  author: {
+    name: "Mahmud Ahsan"
   }
 }
 
@@ -59,7 +62,7 @@ const Cards = [
   {
     title_english: "Python English",
     title_other: "Python Tutorials",
-    short_desc: "I periodically write Python programming related English blog posts which are mentioned in this section.",
+    short_desc: "Some of my English Python programming video tutorials are listed here.",
     image: "py-english.png",
     title_other_css_class: 'color5',
   }
