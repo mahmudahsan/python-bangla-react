@@ -20,7 +20,9 @@
 # Python Bangla React
 I remake my original Python Django Framework based project [PythonBangla](https://github.com/mahmudahsan/pythonbangla.com) to Reactjs and firebase based project. During the making of this project, I updated the UI a bit. 
 
-Demo: [http://pythonbangla.com/](http://pythonbangla.com/)
+Demo 1: 😎 [http://pythonbangla.com/](http://pythonbangla.com/) | Source Code: [Github React](https://github.com/mahmudahsan/python-bangla-react)
+
+Demo 1 🤓: [Django + PostgreSQL + Heroku](https://pb-947583-bn474.herokuapp.com) | Source Code: [Github Django](https://github.com/mahmudahsan/pythonbangla.com)
 
 
 <p align="center">
