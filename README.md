@@ -34,7 +34,7 @@ Demo 2: 🤓 [Django + PostgreSQL + Heroku](https://pb-947583-bn474.herokuapp.co
 </p>
 
 <p align="center">
-    <img src="Resources/react-components.png" alt="React Components" />
+    <img src="Resources/react-components1.png" alt="React Components" />
 </p>
 
 
