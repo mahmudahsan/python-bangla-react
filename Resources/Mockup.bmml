@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="907" measuredH="819" mockupW="847" mockupH="799">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1161" measuredH="819" mockupW="1101" mockupH="799">
   <controls>
     <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="60" y="20" w="847" h="76" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
@@ -12,11 +12,13 @@
     </control>
     <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="60" y="129" w="847" h="156" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
+        <borderColor>16776960</borderColor>
         <borderStyle>square</borderStyle>
       </controlProperties>
     </control>
     <control controlID="3" controlTypeID="com.balsamiq.mockups::Canvas" x="60" y="285" w="847" h="378" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
+        <borderColor>16750848</borderColor>
         <borderStyle>square</borderStyle>
       </controlProperties>
     </control>
@@ -95,15 +97,77 @@
         <text>Back%20to%20top</text>
       </controlProperties>
     </control>
-    <control controlID="23" controlTypeID="com.balsamiq.mockups::VideoPlayer" x="473" y="305" w="400" h="227" measuredW="300" measuredH="200" zOrder="22" locked="false" isInGroup="-1"/>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::VideoPlayer" x="473" y="320" w="400" h="212" measuredW="300" measuredH="200" zOrder="22" locked="false" isInGroup="-1"/>
     <control controlID="24" controlTypeID="com.balsamiq.mockups::TextArea" x="473" y="543" w="398" h="105" measuredW="200" measuredH="140" zOrder="23" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Video%20Description</text>
       </controlProperties>
     </control>
-    <control controlID="25" controlTypeID="com.balsamiq.mockups::List" x="93" y="305" w="345" h="343" measuredW="100" measuredH="126" zOrder="24" locked="false" isInGroup="-1">
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::List" x="93" y="320" w="345" h="328" measuredW="100" measuredH="126" zOrder="24" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Item%20One%0AItem%20Two%0AItem%20Three</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::VCurly" x="916" y="25" w="195" h="95" measuredW="180" measuredH="140" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>2848996</color>
+        <size>40</size>
+        <text>Header</text>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::VCurly" x="916" y="137" w="245" h="522" measuredW="180" measuredH="140" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>13576743</color>
+        <size>40</size>
+        <text>Routing%20Component</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::VCurly" x="916" y="671" w="195" h="148" measuredW="180" measuredH="140" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>16750848</color>
+        <size>40</size>
+        <text>Footer</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Label" x="772" y="189" w="-1" h="-1" measuredW="80" measuredH="36" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>2848996</color>
+        <size>28</size>
+        <text>Cards</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Label" x="401" y="285" w="-1" h="-1" measuredW="120" measuredH="36" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>13576743</color>
+        <size>28</size>
+        <text>Playback</text>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Label" x="200" y="431" w="-1" h="-1" measuredW="96" measuredH="36" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>13576743</color>
+        <size>28</size>
+        <text>Playlist</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::Label" x="631" y="431" w="-1" h="-1" measuredW="109" measuredH="36" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>13576743</color>
+        <size>28</size>
+        <text>Youtube</text>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::Arrow" x="747" y="152" w="10" h="111" measuredW="150" measuredH="100" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>2848996</color>
+        <direction>top</direction>
       </controlProperties>
     </control>
   </controls>
