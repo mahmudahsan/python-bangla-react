@@ -33,6 +33,11 @@ Demo 2: 🤓 [Django + PostgreSQL + Heroku](https://pb-947583-bn474.herokuapp.co
     <img src="Resources/Mockup.png" alt="Mockup" height="500" />
 </p>
 
+<p align="center">
+    <img src="Resources/react-components.png" alt="React Components" />
+</p>
+
+
 # Table of Contents
 
 - [Technology Used](#technology-used)
