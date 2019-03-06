@@ -3,13 +3,12 @@
 import Firebase from 'firebase';
 
 const config = {
-  apiKey: "sxxxx",
-  authDomain: "ssss",
+  apiKey: "xxxx",
+  authDomain: "xxxx",
   databaseURL: "xxxx",
   projectId: "xxxx",
   storageBucket: "xxxx",
-  messagingSenderId: "xxx"
+  messagingSenderId: "xxxx"
 };
 
 export default Firebase.initializeApp(config);
-

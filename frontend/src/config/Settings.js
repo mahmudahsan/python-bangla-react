@@ -1,7 +1,4 @@
-// Site's Configuration
-/**
- * @author Mahmud Ahsan <https://github.com/mahmudahsan>
- */
+///
 
 const Config = {
   logoAlt: 'পাইথন বাংলা',
@@ -11,10 +8,9 @@ const Config = {
     menu1: ["বিগিনার", "/", 'beginner'],
     menu2: ["অ‍্যাডভান্সড", "/advanced", 'advanced'],
     menu3: ["জ‍্যাঙ্গো ওয়েব", "/django", 'django'],
-    menu4: ["HTML|CSS", "/html-css", 'html'],
     menu5: ["Python English", "/python-tutorials", 'english'],
-    menu6: ["ব্লগ", "ext", "http://thinkdiff.net"],
-    menu7: ["মোবাইল অ‍্যাপস", "ext", "http://ithinkdiff.net"],
+    menu6: ["Blog", "ext", "http://thinkdiff.net"],
+    menu7: ["Mobile Apps", "ext", "http://ithinkdiff.net"],
   },
   social: {
     facebook: "https://www.facebook.com/thinkdiff.net/",
@@ -51,13 +47,6 @@ const Cards = [
     short_desc: "এই সিরিজ টিউটোরিয়ালে পাইথনের জ‍্যাঙ্গো ওয়েব ফ্রেমওয়ার্ক দিয়ে ওয়েব অ‍্যাপ্লিকেশন বানানোর খুটিনাটি বিষয় থেকে শুরু করে ডাটাবেজ, সার্ভারে আপলোড করা এসব নিয়ে আলোচনা করা হয়েছে",
     image: "py-django.png",
     title_other_css_class: 'color3'
-  },
-  {
-    title_english: "HTML CSS",
-    title_other: "ওয়েবপেজ ডিজাইন",
-    short_desc: "ওয়েব ডিজাইনার অথবা ওয়েব ডেভলপার হতে হলে এইচটিএমএল এবং সিএসএস সম্পর্কে ব‍্যাসিক নলেজ থাকা অত‍্যাবশ‍্যক। এই সিরিজে আমি এইচটিএমএল এবং সিএসএস দিয়ে ওয়েব ডিজাইন আলোচনা করেছি।",
-    image: "py-web.png",
-    title_other_css_class: 'color4'
   },
   {
     title_english: "Python English",

@@ -6,13 +6,12 @@ import React from 'react';
 import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom';
 import Header from '../components/Header';
 import RoutingComponent from '../components/RoutingComponent';
-import Footer from '../components/Footer';
 import NotFoundPage from '../components/NotFoundPage';
 import Config from '../config/Settings';
+import FirebaseForm from '../components/FirebaseForm';
 
 const AppRouter = () => {
   return (
-    <div>
     <div className="container">
       <Header />
       <BrowserRouter>
@@ -46,7 +45,6 @@ const AppRouter = () => {
             <Route path={Config.menu.menu1[1]} component={RoutingComponent} exact />
             <Route path={Config.menu.menu2[1]} component={RoutingComponent} />
             <Route path={Config.menu.menu3[1]} component={RoutingComponent} />
-            <Route path={Config.menu.menu4[1]} component={RoutingComponent} />
             <Route path={Config.menu.menu5[1]} component={RoutingComponent} />
             <Route path={Config.menu.menu6[1]} component={() => window.location='"'+Config.menu.menu6[2]+'"'} />
             <Route path={Config.menu.menu7[1]} component={RoutingComponent} />
@@ -55,9 +53,6 @@ const AppRouter = () => {
           </Switch>
         </div>
       </BrowserRouter>
-    </div>
-    <div className="mb-4"></div>
-    <Footer />
     </div>
   );
 };

@@ -129,6 +129,8 @@ Also add `import FirebaseForm from '../components/FirebaseForm';` this code at t
 
 2. Now follow [Create React App Firebase Hosting](https://facebook.github.io/create-react-app/docs/deployment#firebase-https-firebasegooglecom) to deploy your project in firebase
 
+3. firebase deploy --project PROJECT_ID
+
 ## Contribution
 If you want to contribute on this project, you're welcome to fork the project and submit a pull request. 
 
