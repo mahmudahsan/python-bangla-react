@@ -30,6 +30,10 @@ Demo 2: 🤓 [Django + PostgreSQL + Heroku](https://pb-947583-bn474.herokuapp.co
 
 
 <p align="center">
+    <img src="Resources/pythonbangla.jpg" alt="Website" height="500" />
+</p>
+
+<p align="center">
     <img src="Resources/Mockup.png" alt="Mockup" height="500" />
 </p>
 
@@ -40,13 +44,15 @@ Demo 2: 🤓 [Django + PostgreSQL + Heroku](https://pb-947583-bn474.herokuapp.co
 
 # Table of Contents
 
-- [Technology Used](#technology-used)
-- [Features](#features)
-- [Setup in local machine](#setup-in-local-machine)
-- [Setup Firebase](#setup-firebase)
-- [Deploy in Firebase Hosting](#deploy-in-firebase-hosting)
-- [Contribution](#contribution)
-- [Questions or feedback?](#questions-or-feedback)
+- [Python Bangla React](#python-bangla-react)
+- [Table of Contents](#table-of-contents)
+  - [Technology Used](#technology-used)
+  - [Features](#features)
+  - [Setup in local machine](#setup-in-local-machine)
+  - [Setup Firebase](#setup-firebase)
+  - [Deploy in Firebase Hosting](#deploy-in-firebase-hosting)
+  - [Contribution](#contribution)
+  - [Questions or feedback?](#questions-or-feedback)
 
 ## Technology Used
 1. [React](https://reactjs.org/)
