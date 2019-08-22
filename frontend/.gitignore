@@ -31,3 +31,5 @@ yarn-error.log*
 .idea
 .firebaserc
 .firebase/*.cache
+
+ads.txt
