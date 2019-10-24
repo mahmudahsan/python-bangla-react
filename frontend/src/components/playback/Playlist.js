@@ -29,7 +29,7 @@ export default class Playlist extends React.Component {
         <div className="list-group" id="list-tab" role="tablist">
           {this.props.playlist.map( (item, key) => {
             return (
-              <a className={"list-group-item list-group-item-action " + (key === this.state.selectedItemIndex ? "active" : "")} id="list-home-list" data-toggle="tab" href={item.youtube} key={item.youtube}  role="tab" aria-controls="list-home" aria-selected="true" onClick={(e) => this.changeVideo(e, item, key)}>{item.title}</a>
+              <a className={"list-group-item list-group-item-action " + (key === this.state.selectedItemIndex ? "active" : "")} id="list-home-list" data-toggle="tab" href={item.youtube} key={item.id + item.youtube}  role="tab" aria-controls="list-home" aria-selected="true" onClick={(e) => this.changeVideo(e, item, key)}>{item.title}</a>
             );
           })}
         </div>
