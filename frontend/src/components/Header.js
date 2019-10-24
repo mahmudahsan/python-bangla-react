@@ -6,7 +6,7 @@ import React from 'react';
 import Config from '../config/Settings';
 
 export default (props) => {
-  const logo = Config.imageBaseUrl + "images/python-logo.png"
+  const logo = Config.imageBaseUrl + "images/logo.png"
   return (
     <header className="blog-header py-3">
       <div className="row flex-nowrap justify-content-between align-items-center">
