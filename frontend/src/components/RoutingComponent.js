@@ -5,6 +5,7 @@
 import React from 'react';
 import Cards from './Cards';
 import Playback from './playback/Playback';
+import Footer from './Footer';
 
 const RoutingComponent = (props) => {
   return (
@@ -12,6 +13,7 @@ const RoutingComponent = (props) => {
       <Cards />
       <div className="mb-2"></div>
       <Playback topic={props.match.path} />
+      <Footer />
     </div>
   );
 };
