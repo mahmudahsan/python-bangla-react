@@ -15,7 +15,7 @@ export default (props) => {
             <img className="card-img-top" src={ cardImage } alt={ card.title_english } />
             <div className="card-body">
               <h3 className={"mb-0 " + card.title_other_css_class}>
-                  { card.title_other }
+                  { card.title_other === '' ? card.title_english : card.title_other }
               </h3>
               <p className="card-text mb-auto card-overflow">
                 { card.short_desc }
