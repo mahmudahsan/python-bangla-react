@@ -17,7 +17,11 @@
 </p>
 
 
-# Python Bangla React
+# Single Page React Web App
+
+Demo 1: https://flutterbook.net
+Demo 2: https://pythonbangla.com
+
 I redevelop my original Python Django Framework based project [PythonBangla](https://github.com/mahmudahsan/pythonbangla.com) to Reactjs and firebase based project. During the making of this project, I updated the UI a bit. 
 
 For last 6 months, I was learning ReactJs library. I wanted to develop something else. But before developing my other big project, I thought lets rebuild my original django project so that I can test how good I understand React, Firebase Cloud Firestore (NoSQL) etc.
