@@ -19,8 +19,9 @@
 
 # Single Page React Web App
 
-Demo 1: https://flutterbook.net
-Demo 2: https://pythonbangla.com
+**Demo 1: https://flutterbook.net**
+
+**Demo 2: https://pythonbangla.com**
 
 I redevelop my original Python Django Framework based project [PythonBangla](https://github.com/mahmudahsan/pythonbangla.com) to Reactjs and firebase based project. During the making of this project, I updated the UI a bit. 
 
