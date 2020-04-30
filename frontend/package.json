@@ -5,7 +5,7 @@
   "dependencies": {
     "bootstrap": "^4.2.1",
     "firebase": "^5.8.2",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.14.7",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
