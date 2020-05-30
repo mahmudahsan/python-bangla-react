@@ -13,11 +13,11 @@ const Config = {
     menu7: ["Mobile Apps", "ext", "http://ithinkdiff.net"],
   },
   social: {
-    facebook: "https://www.facebook.com/thinkdiff.net/",
-    twitter:  "http://twitter.com/mahmudahsan/",
-    github:   "https://github.com/mahmudahsan/",
-    linkedin: "https://www.linkedin.com/in/mahmudahsan/",
-    youtube:  "https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg",
+    facebook: "",
+    twitter:  "",
+    github:   "",
+    linkedin: "",
+    youtube:  "",
   },
   author: {
     name: "Mahmud Ahsan"
